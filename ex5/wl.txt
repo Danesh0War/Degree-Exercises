@@ -1,0 +1,4 @@
+dog,1
+CAT,1
+cAt,1
+PoP,2
