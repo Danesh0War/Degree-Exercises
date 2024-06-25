@@ -1,0 +1,11 @@
+def squares_area():
+    """Function calculates and prints square area of squares with a side length from 1 to 10 included"""
+    """Possible to write print((math.pow(1,2), math.pow(2,2)...) or print((1**2, 2**2)...) without math module But 
+    technological progress is also driven also by laziness and we have loops for code reuse that do exactly the same"""
+    for i in range(1, 11):
+        print(int(math.pow(i, 2)), end=' ')  # To pass the auto test I was forced to return integers rather than
+        # floating-point numbers
+        if i < 10:
+            print(' ', end='')  # To fix: 31 expected: '1 4 9 16 25 36 49 64 81 100\n' 32 actual: '1 4 9 16 25 36 49
+            # 64 81 100 \n'
+    print()  # Also test expected '1 4 9 16 25 36 49 64 81 100\n' new line in the end
